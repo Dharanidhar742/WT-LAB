@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing </title>
+    <style >
+    p1,h1,div1
+    {
+        display: table;
+        border: 5px solid rgb(1, 7, 5);
+        padding: 30px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+
+
+       <div id="div1" class="c1">
+           <h2>div</h2>
+                <h1 id="h1" class="c1">head
+                    <p1 id="p1" class="c1">para</p1>
+                </h1>
+       </div>
+
+
+</body>
+
+<script >
+
+    var divs= document.getElementById("div1");
+    divs.addEventListener("click",function(){alert("Div Clicked")},true);
+    var p1= document.getElementById("p1");
+    p1.addEventListener("click",function(){alert("Paragraph clicked")},true);
+    var h1= document.getElementById("h1");
+    h1.addEventListener("click",function(){alert("Head clicked")},true);
+</script>
+</html> 
